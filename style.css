@@ -495,3 +495,32 @@ width:100px;
     height: 60px;
     margin-bottom: 15px;
 }
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #e0e0e0;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.tab-btn.active {
+  background: #2d6cff;
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
