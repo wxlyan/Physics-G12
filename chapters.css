@@ -115,38 +115,3 @@ font-size:35px;
 .light-mode .content p{
     color:#555;
 }
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-    const themeBtn = document.querySelector(".theme");
-    const menuBtn = document.querySelector(".menu");
-    const sideMenu = document.querySelector(".side-menu");
-    const overlay = document.querySelector(".overlay");
-
-    /* Theme Button */
-    if(themeBtn){
-        themeBtn.addEventListener("click", () => {
-            document.body.classList.toggle("light-mode");
-        });
-    }
-
-    /* Menu Button */
-    if(menuBtn){
-        menuBtn.addEventListener("click", () => {
-            sideMenu.classList.toggle("active");
-            overlay.classList.toggle("active");
-        });
-    }
-
-    /* Close Menu */
-    if(overlay){
-        overlay.addEventListener("click", () => {
-            sideMenu.classList.remove("active");
-            overlay.classList.remove("active");
-        });
-    }
-
-});
-</script>
-
