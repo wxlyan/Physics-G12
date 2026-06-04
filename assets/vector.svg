@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 260 180">
+
+  <!-- X Axis --><line x1="25"
+y1="150"
+x2="235"
+y2="150"
+stroke="#7f8aa3"
+stroke-width="3"/>
+
+  <!-- Y Axis --><line x1="25"
+y1="150"
+x2="25"
+y2="20"
+stroke="#7f8aa3"
+stroke-width="3"/>
+
+  <!-- Vector --><line x1="25"
+y1="150"
+x2="180"
+y2="55"
+stroke="#1f67ff"
+stroke-width="5"/>
+
+  <!-- Arrow Head --><polygon points="
+180,55
+165,55
+174,42"
+fill="#1f67ff"/>
+
+  <!-- Angle Arc --><path d="
+M70 150
+A45 45 0 0 1 62 122"
+fill="none"
+stroke="#9db8ff"
+stroke-width="3"/>
+
+  <!-- Labels --><text x="190"
+y="50"
+font-size="18"
+fill="#1f67ff"
+font-family="Arial">
+V
+</text>
+
+<text x="240"
+y="155"
+font-size="16"
+fill="#7f8aa3"
+font-family="Arial">
+x
+</text>
+
+<text x="18"
+y="18"
+font-size="16"
+fill="#7f8aa3"
+font-family="Arial">
+y
+</text>
+
+</svg>
