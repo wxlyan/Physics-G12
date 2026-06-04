@@ -395,11 +395,13 @@ width:100px;
 }
 
 .line {
-    flex: 1;
+    position: absolute;
+    top: 28px;
+    left: 30px;
+    right: 30px;
     height: 4px;
-    background-color: #dbe5ff;
-    margin: 0 10px;
-    border-radius: 2px;
+    background: #2dc6ff;
+    border-radius: 10px;
 }
 
 .motion-labels {
