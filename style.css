@@ -230,3 +230,41 @@ width:100px;
         transform:translateY(-12px);
     }
 }
+
+/* Premium learning section */
+.premium-learning{
+    padding: 20px;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    border-radius: 16px;
+    margin-top: 40px;
+}
+
+.premium-learning h2{
+    margin-bottom: 16px;
+    font-size: 22px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 6px;
+}
+
+.objective-card, .example-card, .experiment-card{
+    background: rgba(255,255,255,0.05);
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.experiment-card button{
+    background: #06b6d4;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.experiment-card button:hover{
+    background: #0ea5e9;
+}
