@@ -115,3 +115,40 @@ font-size:35px;
 .light-mode .content p{
     color:#555;
 }
+.side-menu{
+    position:fixed;
+    top:0;
+    left:-260px;
+    width:250px;
+    height:100vh;
+    background:#111827;
+    padding:30px;
+    transition:.3s;
+    z-index:999;
+}
+
+.side-menu.active{
+    left:0;
+}
+
+.side-menu a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 0;
+    font-size:18px;
+}
+
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.5);
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+}
+
+.overlay.active{
+    opacity:1;
+    visibility:visible;
+}
