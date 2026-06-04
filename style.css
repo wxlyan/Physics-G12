@@ -419,9 +419,13 @@ width:100px;
 }
 
 .motion-labels span {
+    display: inline-block;
+    margin: 5px 8px;
+    padding: 5px 10px;
+    background: #2dc6ff;
+    color: white;
+    border-radius: 12px;
     font-size: 14px;
-    font-weight: 600;
-    color: #06184d;
 }
 .point {
     position: absolute;
