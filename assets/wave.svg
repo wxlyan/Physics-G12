@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 320 180">
+
+  <!-- Main Wave --><path d="
+M0 90
+C40 30, 80 30, 120 90
+S200 150, 240 90
+S280 30, 320 90"
+fill="none"
+stroke="#1f67ff"
+stroke-width="5"/>
+
+  <!-- Secondary Wave --><path d="
+M0 120
+C40 60, 80 60, 120 120
+S200 180, 240 120
+S280 60, 320 120"
+fill="none"
+stroke="#9db8ff"
+stroke-width="3"
+opacity="0.7"/>
+
+  <!-- Nodes --><circle cx="120"
+cy="90"
+r="6"
+fill="#1f67ff"/>
+
+<circle cx="240"
+cy="90"
+r="6"
+fill="#1f67ff"/>
+
+  <!-- Label --><text x="130"
+y="35"
+font-size="20"
+fill="#1f67ff"
+font-family="Arial">
+λ
+</text>
+
+</svg>
