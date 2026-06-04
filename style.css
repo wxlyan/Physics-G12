@@ -101,6 +101,15 @@ font-size:20px;
 box-shadow:0 10px 25px rgba(45,108,255,.25);
 }
 
+.enter-btn{
+    transition:all .3s ease;
+}
+
+.enter-btn:active{
+    transform:scale(.95);
+    box-shadow:0 8px 20px rgba(45,108,255,.4);
+}
+
 .icon{
 position:absolute;
 opacity:.35;
@@ -190,3 +199,34 @@ width:100px;
         transform:rotate(360deg);
     }
   }
+
+.chapter-card{
+    transition:all .3s ease;
+    cursor:pointer;
+}
+
+.chapter-card:hover{
+    transform:scale(1.02);
+    background:#121c3d;
+}
+.chapter-card:active{
+    transform:scale(.98);
+}
+.phone-link{
+    text-decoration:none;
+    color:#06184d;
+    font-size:28px;
+    font-weight:700;
+}
+.formula{
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
+}
