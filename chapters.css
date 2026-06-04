@@ -101,3 +101,17 @@ font-size:35px;
     text-decoration:none;
     color:white;
 }
+
+.light-mode{
+    background:#f5f7ff;
+    color:#111;
+}
+
+.light-mode .card{
+    background:white;
+    color:#111;
+}
+
+.light-mode .content p{
+    color:#555;
+}
