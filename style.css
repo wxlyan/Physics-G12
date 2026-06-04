@@ -421,3 +421,26 @@ width:100px;
     font-weight: 600;
     color: #06184d;
 }
+.point {
+    position: absolute;
+    top: 20px;          /* vertical position */
+    width: 20px;
+    height: 20px;
+    background: #2dc6ff;
+    border-radius: 50%; /* circle */
+}
+
+.start-point { 
+    left: 0;            /* left edge */
+}
+
+.end-point { 
+    right: 0;           /* right edge */
+}
+
+.point span {
+    position: absolute;
+    top: 30px;          /* text below circle */
+    font-size: 14px;
+    color: #fff;
+}
