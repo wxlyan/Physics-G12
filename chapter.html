@@ -112,11 +112,36 @@
 
     <div id="simulate" class="tab-content">
 
-        <h2>Simulation</h2>
+    <div class="card">
 
-        <p>
-            Interactive experiments will appear here.
-        </p>
+        <h2>🧪 Experiment Lab</h2>
+
+        <label>Speed (m/s)</label>
+
+        <input
+        type="number"
+        id="speed"
+        placeholder="Enter Speed">
+
+        <label>Time (s)</label>
+
+        <input
+        type="number"
+        id="time"
+        placeholder="Enter Time">
+
+        <button onclick="calculateDistance()">
+            Calculate
+        </button>
+
+        <div id="resultBox"
+        class="result-box">
+
+            Result will appear here
+
+        </div>
+
+    </div>
 
     </div>
 
