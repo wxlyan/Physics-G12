@@ -12,15 +12,23 @@ background:#050816;
 color:white;
 padding:20px;
 }
-
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-margin-bottom:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    margin-bottom:40px;
+}
+.menu {
+    position:absolute;
+    left:0;
 }
 
-.menu,.theme{
+.theme{
+    position:absolute;
+    right:0;
+}
+
 width:50px;
 height:50px;
 border-radius:15px;
@@ -32,8 +40,10 @@ font-size:24px;
 }
 
 header h2{
-font-size:14px;
-letter-spacing:5px;
+    font-size:14px;
+    letter-spacing:5px;
+    text-align:center;
+    width:100%;
 }
 
 .title{
