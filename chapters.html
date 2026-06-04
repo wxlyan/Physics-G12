@@ -93,44 +93,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 </script>
-<div class="side-menu">
-    <a href="index.html">Home</a>
-    <a href="kinematics.html">Kinematics</a>
-    <a href="newton.html">Newton's Laws</a>
-    <a href="work-energy.html">Work Energy</a>
-</div>
-
-<div class="overlay"></div>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-    const themeBtn = document.querySelector(".theme");
-    const menuBtn = document.querySelector(".menu");
-    const sideMenu = document.querySelector(".side-menu");
-    const overlay = document.querySelector(".overlay");
-
-    if(themeBtn){
-        themeBtn.addEventListener("click", () => {
-            document.body.classList.toggle("light-mode");
-        });
-    }
-
-    if(menuBtn){
-        menuBtn.addEventListener("click", () => {
-            sideMenu.classList.toggle("active");
-            overlay.classList.toggle("active");
-        });
-    }
-
-    if(overlay){
-        overlay.addEventListener("click", () => {
-            sideMenu.classList.remove("active");
-            overlay.classList.remove("active");
-        });
-    }
-
-});
-</script>
 </body>
 </html>
