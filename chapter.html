@@ -1,15 +1,75 @@
-<div class="tabs">
-  <button class="tab-btn active" data-tab="learn">Learn</button>
-  <button class="tab-btn" data-tab="simulate">Simulate</button>
-  <button class="tab-btn" data-tab="explore">Explore</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Physics Chapter</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="chapter-container">
+
+    <a href="index.html" class="back-btn">
+        ← Back
+    </a>
+
+    <h1 id="chapter-title">
+        Chapter 1 : Kinematics
+    </h1>
+
+    <div class="tabs">
+
+        <button class="tab-btn active" data-tab="learn">
+            Learn
+        </button>
+
+        <button class="tab-btn" data-tab="simulate">
+            Simulate
+        </button>
+
+        <button class="tab-btn" data-tab="explore">
+            Explore
+        </button>
+
+    </div>
+
+    <div id="learn" class="tab-content active">
+
+        <h2>Summary</h2>
+
+        <p>
+            Kinematics is the study of motion.
+        </p>
+
+    </div>
+
+    <div id="simulate" class="tab-content">
+
+        <h2>Simulation</h2>
+
+        <p>
+            Interactive experiments will appear here.
+        </p>
+
+    </div>
+
+    <div id="explore" class="tab-content">
+
+        <h2>Practice</h2>
+
+        <p>
+            Questions and exercises will appear here.
+        </p>
+
+    </div>
+
 </div>
 
-<div class="tab-content active" id="learn">
-  <!-- Learn content goes here -->
-</div>
-<div class="tab-content" id="simulate">
-  <!-- Simulate interactive content -->
-</div>
-<div class="tab-content" id="explore">
-  <!-- Practice problems / additional resources -->
-</div>
+<script src="script.js"></script>
+
+</body>
+</html>
