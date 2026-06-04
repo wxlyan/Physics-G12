@@ -96,3 +96,8 @@ font-size:35px;
 .orange{color:#f97316;}
 .green{color:#22c55e;}
 .cyan{color:#06b6d4;}
+
+.card{
+    text-decoration:none;
+    color:white;
+}
