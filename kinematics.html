@@ -6,85 +6,40 @@
 <title>Kinematics | Physics G12</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
+/* Basic reset */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#050B1F;color:white;padding:20px;}
+.header{display:flex;align-items:center;margin-bottom:20px;}
+.back-btn{text-decoration:none;color:white;background:#111827;padding:12px 18px;border-radius:12px;}
+.title{text-align:center;margin-bottom:20px;}
+.title h1{font-size:2.5rem;color:#4F7DFF;}
+.title p{color:#9CA3AF;margin-top:5px;}
+.card{background:#111827;border-radius:20px;padding:20px;margin-bottom:20px;}
+.card h2{color:#4F7DFF;margin-bottom:10px;}
+.card p{color:#D1D5DB;line-height:1.6;}
+.formula{background:#0B122A;border-left:4px solid #4F7DFF;padding:15px;margin-top:10px;border-radius:10px;font-size:1.2rem;}
+.quiz{background:#0B122A;padding:15px;border-radius:12px;margin-top:10px;}
 
-body{
-    background:#050B1F;
-    color:white;
-    padding:20px;
+/* Accordion */
+.chapter-accordion {margin-top:20px;}
+.accordion-item {margin-bottom:10px;}
+.accordion-btn{
+  width:100%;background:linear-gradient(90deg,#4f7cff,#7c5cff);
+  color:#fff;padding:15px;border:none;border-radius:10px;
+  text-align:left;font-size:18px;cursor:pointer;
 }
+.accordion-content{display:none;padding:15px;background:#111827;border-radius:10px;}
 
-.header{
-    display:flex;
-    align-items:center;
-    margin-bottom:30px;
-}
-
-.back-btn{
-    text-decoration:none;
-    color:white;
-    background:#111827;
-    padding:12px 18px;
-    border-radius:12px;
-}
-
-.title{
-    text-align:center;
-    margin-bottom:40px;
-}
-
-.title h1{
-    font-size:3rem;
-    color:#4F7DFF;
-}
-
-.title p{
-    color:#9CA3AF;
-    margin-top:10px;
-}
-
-.card{
-    background:#111827;
-    border-radius:20px;
-    padding:20px;
-    margin-bottom:20px;
-}
-
-.card h2{
-    color:#4F7DFF;
-    margin-bottom:15px;
-}
-
-.card p{
-    color:#D1D5DB;
-    line-height:1.8;
-}
-
-.formula{
-    background:#0B122A;
-    border-left:4px solid #4F7DFF;
-    padding:15px;
-    margin-top:15px;
-    border-radius:10px;
-    font-size:1.2rem;
-}
-
-.quiz{
-    background:#0B122A;
-    padding:15px;
-    border-radius:12px;
-    margin-top:15px;
-}
+/* Experiment Lab */
+.experiment-box{background:#111827;padding:15px;border-radius:12px;margin-top:10px;}
+.road{background:#0B122A;height:50px;position:relative;margin-top:15px;border-radius:10px;}
+#car{position:absolute;left:0;top:5px;font-size:30px;transition:transform 1s linear;}
+input{padding:8px;margin:5px 0;width:80px;}
+button{padding:10px 15px;border:none;border-radius:8px;background:#06b6d4;color:white;cursor:pointer;transition:.3s;}
+button:hover{background:#0ea5e9;}
 </style>
-
 </head>
-<body>
-
+</body>
 <div class="header">
     <a href="chapters.html" class="back-btn">← Back</a>
 </div>
@@ -93,62 +48,100 @@ body{
     <h1>Kinematics</h1>
     <p>Motion in One Dimension</p>
 </div>
-
-<div class="card">
-    <h2>What is Kinematics?</h2>
-    <p>
-        Kinematics is the branch of Physics that studies the motion
-        of objects without considering the forces that cause the motion.
-    </p>
-</div>
-
-<div class="card">
-    <h2>Key Quantities</h2>
-    <p>• Distance</p>
-    <p>• Displacement</p>
-    <p>• Speed</p>
-    <p>• Velocity</p>
-    <p>• Acceleration</p>
-</div>
-
-<div class="card">
-    <h2>Important Formulas</h2>
-
-    <div class="formula">
-        v = u + at
+<div class="chapter-accordion">
+  <!-- Learn Section -->
+  <div class="accordion-item">
+    <button class="accordion-btn">📖 Learn</button>
+    <div class="accordion-content">
+      <div class="card">
+        <h2>What is Kinematics?</h2>
+        <p>Kinematics is the branch of Physics that studies the motion of objects without considering the forces that cause the motion.</p>
+      </div>
+      <div class="card">
+        <h2>Key Quantities</h2>
+        <p>• Distance</p>
+        <p>• Displacement</p>
+        <p>• Speed</p>
+        <p>• Velocity</p>
+        <p>• Acceleration</p>
+      </div>
+      <div class="card">
+        <h2>Important Formulas</h2>
+        <div class="formula">v = u + at</div>
+        <div class="formula">s = ut + ½at²</div>
+        <div class="formula">v² = u² + 2as</div>
+      </div>
+      <div class="card">
+        <h2>Example</h2>
+        <p>A car starts with velocity 10 m/s and accelerates at 2 m/s² for 5 seconds.</p>
+        <div class="formula">v = u + at<br>v = 10 + (2 × 5)<br>v = 20 m/s</div>
+      </div>
     </div>
+  </div>
 
-    <div class="formula">
-        s = ut + ½at²
+  <!-- Visual Summary -->
+  <div class="accordion-item">
+    <button class="accordion-btn">🖼 Visual Summary</button>
+    <div class="accordion-content">
+      <div class="card">
+        <h2>Motion Overview</h2>
+        <p>Start Point ●────────────● End Point</p>
+        <p>Distance, Displacement, Speed, Velocity, Acceleration</p>
+      </div>
     </div>
+  </div>
 
-    <div class="formula">
-        v² = u² + 2as
+  <!-- Experiment Lab -->
+  <div class="accordion-item">
+    <button class="accordion-btn">🧪 Experiment Lab</button>
+    <div class="accordion-content">
+      <div class="experiment-box">
+        <h3>Car Motion Simulator</h3>
+        <label>Speed (m/s)</label>
+        <input type="number" id="speed" value="10">
+        <label>Time (s)</label>
+        <input type="number" id="time" value="5">
+        <button onclick="moveCar()">Start Simulation</button>
+        <div class="road">
+          <div id="car">🚗</div>
+        </div>
+        <p id="result"></p>
+      </div>
     </div>
+  </div>
+
+  <!-- Quiz Section -->
+  <div class="accordion-item">
+    <button class="accordion-btn">📝 Quiz</button>
+    <div class="accordion-content">
+      <div class="quiz">
+        If u = 5 m/s, a = 3 m/s² and t = 4 s, find v.
+      </div>
+    </div>
+  </div>
 </div>
+<script>
+// Accordion toggle
+document.querySelectorAll(".accordion-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    const content = button.nextElementSibling;
+    if(content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+});
 
-<div class="card">
-    <h2>Example</h2>
+// Experiment Lab JS
+function moveCar() {
+  let speed = parseFloat(document.getElementById("speed").value);
+  let time = parseFloat(document.getElementById("time").value);
+  let distance = speed * time;
+  document.getElementById("result").innerHTML = "Distance = " + distance + " m";
+  document.getElementById("car").style.transform = "translateX(" + distance + "px)";
+}
+</script>
 
-    <p>
-        A car starts with velocity 10 m/s and accelerates at
-        2 m/s² for 5 seconds.
-    </p>
-
-    <div class="formula">
-        v = u + at
-        <br><br>
-        v = 10 + (2 × 5)
-        <br><br>
-        v = 20 m/s
-    </div>
-</div>
-
-<div class="card">
-    <h2>Quick Quiz</h2>
-
-    <div class="quiz">
-        If u = 5 m/s, a = 3 m/s² and t = 4 s,
-        find v.
-    </div>
-</div>
+</body>
+</html>
