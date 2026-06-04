@@ -524,3 +524,37 @@ width:100px;
 .tab-content.active {
   display: block;
 }
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #1e293b;
+    color: #cbd5e1;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.tab-btn.active {
+    background: #3b82f6;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+    padding: 15px;
+    background: #111827;
+    border-radius: 12px;
+    color: #e2e8f0;
+}
+
+.tab-content.active {
+    display: block;
+}
