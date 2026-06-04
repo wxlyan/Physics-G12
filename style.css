@@ -1,110 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Inter,sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f6f7fb;
-padding:20px;
-}
-
-.container{
-max-width:500px;
-margin:auto;
-}
-
-header{
+background:#050816;
+height:100vh;
 display:flex;
-justify-content:space-between;
-align-items:center;
-margin-bottom:40px;
-}
-
-.menu,.theme{
-width:50px;
-height:50px;
-border-radius:50%;
-background:white;
-display:flex;
-align-items:center;
 justify-content:center;
-box-shadow:0 8px 20px rgba(0,0,0,.08);
-font-size:22px;
+align-items:center;
+overflow:hidden;
+}
+
+.hero{
+text-align:center;
+color:white;
 }
 
 .logo{
-font-size:13px;
-letter-spacing:4px;
+font-size:90px;
+margin-bottom:20px;
+animation:float 3s infinite ease-in-out;
+}
+
+.hero h1{
+font-size:60px;
 font-weight:700;
 }
 
-h1{
-text-align:center;
-font-size:48px;
-font-weight:800;
+.hero span{
+color:#4f7cff;
 }
 
-.underline{
-width:80px;
-height:4px;
-background:#3867ff;
-margin:12px auto;
-border-radius:50px;
+.hero p{
+margin-top:10px;
+font-size:20px;
+opacity:.8;
 }
 
-.subtitle{
-text-align:center;
-color:#777;
-margin-bottom:30px;
-}
-
-.chapter-list{
-display:flex;
-flex-direction:column;
-gap:18px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:25px;
-display:flex;
-align-items:center;
+.enter-btn{
+display:inline-block;
+margin-top:40px;
+padding:18px 45px;
+background:linear-gradient(135deg,#4f7cff,#6a4dff);
+color:white;
 text-decoration:none;
-color:black;
-box-shadow:0 10px 25px rgba(0,0,0,.06);
+border-radius:50px;
+font-size:18px;
+font-weight:600;
+box-shadow:0 10px 35px rgba(79,124,255,.4);
+transition:.3s;
 }
 
-.num{
-font-size:42px;
-font-weight:800;
-width:70px;
+.enter-btn:hover{
+transform:translateY(-4px);
 }
 
-.blue{color:#3d6fff;}
-.purple{color:#8f5dff;}
-.pink{color:#ff4aa2;}
-.orange{color:#ff8a32;}
-.green{color:#50d65a;}
-.cyan{color:#3fc8ff;}
-
-.content{
-flex:1;
+@keyframes float{
+50%{
+transform:translateY(-15px);
 }
-
-.content h3{
-font-size:22px;
-margin-bottom:6px;
-}
-
-.content p{
-font-size:14px;
-color:#777;
-}
-
-.arrow{
-font-size:32px;
-color:#888;
 }
