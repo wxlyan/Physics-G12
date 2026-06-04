@@ -90,19 +90,31 @@
 </div>
 
 </div>
-
-</div>
+  
 <script>
+document.addEventListener("DOMContentLoaded", () => {
 
-const themeBtn = document.querySelector(".theme");
+    const themeBtn = document.querySelector(".theme");
+    const menuBtn = document.querySelector(".menu");
 
-themeBtn.addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
+    if(themeBtn){
+        themeBtn.addEventListener("click", () => {
+            document.body.classList.toggle("light-mode");
+        });
+    }
+
+    if(menuBtn){
+        menuBtn.addEventListener("click", () => {
+            const chapterList = document.querySelector(".chapter-list");
+
+            if(chapterList){
+                chapterList.classList.toggle("show-menu");
+            }
+        });
+    }
+
 });
-
 </script>
 
-</body>
-</html>
 </body>
 </html>
