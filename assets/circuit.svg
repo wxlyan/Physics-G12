@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 320 200">
+
+  <!-- Main Wire --><path d="
+M20 100
+H90
+"
+fill="none"
+stroke="#7f8aa3"
+stroke-width="4"/>
+
+  <!-- Resistor --><polyline points="
+90,100
+105,80
+120,120
+135,80
+150,120
+165,80
+180,100"
+fill="none"
+stroke="#1f67ff"
+stroke-width="4"/>
+
+  <!-- Wire --><line x1="180"
+y1="100"
+x2="240"
+y2="100"
+stroke="#7f8aa3"
+stroke-width="4"/>
+
+  <!-- Capacitor --><line x1="240"
+y1="70"
+x2="240"
+y2="130"
+stroke="#1f67ff"
+stroke-width="4"/>
+
+<line x1="255"
+y1="70"
+x2="255"
+y2="130"
+stroke="#1f67ff"
+stroke-width="4"/>
+
+  <!-- Final Wire --><line x1="255"
+y1="100"
+x2="300"
+y2="100"
+stroke="#7f8aa3"
+stroke-width="4"/>
+
+  <!-- Labels --><text x="122"
+y="60"
+font-size="18"
+fill="#1f67ff"
+font-family="Arial">
+R
+</text>
+
+<text x="240"
+y="55"
+font-size="18"
+fill="#1f67ff"
+font-family="Arial">
+C
+</text>
+
+</svg>
