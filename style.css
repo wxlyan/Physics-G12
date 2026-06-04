@@ -397,9 +397,14 @@ width:100px;
 
 .point span {
     position: absolute;
-    top: 30px;
-    font-size: 14px;
-    color: #06184d;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    min-width: 80px;
 }
 
 .line {
@@ -454,7 +459,12 @@ width:100px;
 
 .point span {
     position: absolute;
-    top: 30px;          /* text below circle */
-    font-size: 14px;
-    color: #fff;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    min-width: 80px;
 }
