@@ -268,3 +268,102 @@ width:100px;
 .experiment-card button:hover{
     background: #0ea5e9;
 }
+/* ===== G12 Lesson Layout ===== */
+
+.accordion-item{
+    margin-bottom:18px;
+}
+
+.accordion-btn{
+    width:100%;
+    border:none;
+    cursor:pointer;
+    padding:18px;
+    border-radius:16px;
+    color:#fff;
+    font-size:20px;
+    font-weight:700;
+    text-align:left;
+    background:linear-gradient(135deg,#3b82f6,#8b5cf6);
+}
+
+.accordion-content{
+    background:#111827;
+    padding:20px;
+    border-radius:16px;
+    margin-top:10px;
+}
+
+.summary-image{
+    width:100%;
+    border-radius:16px;
+    margin-top:10px;
+}
+
+.motion-line{
+    position:relative;
+    height:70px;
+    margin-top:20px;
+}
+
+.motion-line hr{
+    border:none;
+    height:4px;
+    background:white;
+    margin-top:30px;
+}
+
+.start-point,
+.end-point{
+    width:18px;
+    height:18px;
+    background:#22c55e;
+    border-radius:50%;
+    position:absolute;
+    top:23px;
+}
+
+.start-point{
+    left:0;
+}
+
+.end-point{
+    right:0;
+}
+
+.motion-labels{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.experiment-box{
+    background:#0f172a;
+    padding:20px;
+    border-radius:16px;
+    margin-top:15px;
+}
+
+.car-track{
+    position:relative;
+    height:80px;
+    background:#020617;
+    border-radius:12px;
+    overflow:hidden;
+    margin-top:15px;
+}
+
+.car{
+    position:absolute;
+    left:10px;
+    top:20px;
+    font-size:40px;
+}
+
+.result-box{
+    margin-top:15px;
+    padding:15px;
+    background:#1e293b;
+    border-radius:12px;
+    }
