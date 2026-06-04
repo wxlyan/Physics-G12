@@ -1,0 +1,153 @@
+
+/* Clean Final CSS */
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+background:#f3f3f3;
+font-family:Arial,Helvetica,sans-serif;
+display:flex;
+justify-content:center;
+}
+
+.poster{
+width:100%;
+max-width:1024px;
+min-height:100vh;
+background:linear-gradient(to bottom,#fbfbfb 0%,#f6f6f6 100%);
+position:relative;
+overflow:hidden;
+padding:40px 20px 120px;
+}
+
+.pendulum{position:absolute;top:40px;left:20px;width:140px;opacity:.75;}
+.prism{position:absolute;top:40px;right:20px;width:180px;opacity:.75;}
+.atom-main{width:220px;display:block;margin:0 auto 20px;}
+
+.formula-left{position:absolute;top:240px;left:40px;color:#9097a7;font-size:28px;font-style:italic;}
+.formula-right{position:absolute;top:240px;right:40px;color:#9097a7;font-size:28px;font-style:italic;}
+
+.hero{text-align:center;margin-top:120px;position:relative;z-index:2;}
+.title{font-size:96px;font-weight:900;color:#03154f;line-height:1;white-space:nowrap;}
+.title span{color:#1f67ff;}
+
+.title-divider{display:flex;justify-content:center;align-items:center;gap:16px;margin:25px 0;}
+.title-divider span{width:160px;height:2px;background:#cfe0ff;}
+.diamond{width:16px;height:16px;background:#1f67ff;transform:rotate(45deg);}
+
+.subtitle{font-size:28px;color:#08184e;}
+
+.name-pill{
+width:60%;
+margin:35px auto;
+padding:14px 24px;
+border:2px solid #1f67ff;
+border-radius:22px;
+background:#fff;
+font-size:22px;
+font-weight:700;
+color:#03154f;
+}
+
+.star{position:absolute;color:#8eb6ff;font-size:28px;}
+.s1{top:120px;left:250px;}
+.s2{top:120px;right:250px;}
+.s3{top:900px;right:70px;}
+
+.dot-grid{
+position:absolute;
+width:80px;
+height:80px;
+background-image:radial-gradient(#9dc0ff 1.5px,transparent 1.5px);
+background-size:18px 18px;
+}
+
+.d1{top:50px;right:60px;}
+.d2{top:700px;left:40px;}
+.d3{bottom:60px;left:40px;}
+
+.orbit-circle{
+position:absolute;
+width:100px;
+height:100px;
+border:2px dashed #b8d2ff;
+border-radius:50%;
+right:80px;
+top:720px;
+}
+
+.orbit-circle::after{
+content:"";
+width:16px;
+height:16px;
+border-radius:50%;
+background:#6aa7ff;
+position:absolute;
+right:-8px;
+top:50%;
+}
+
+.middle-icons{position:relative;height:300px;margin-top:70px;}
+.vector{position:absolute;left:20px;bottom:0;width:220px;}
+.wave{position:absolute;left:50%;bottom:20px;width:260px;transform:translateX(-50%);}
+.circuit{position:absolute;right:20px;bottom:0;width:220px;}
+
+.contact{text-align:center;margin-top:180px;position:relative;z-index:5;}
+.phone-icon{width:80px;}
+
+.phone-divider{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+margin-top:12px;
+}
+
+.phone-divider span{width:80px;height:2px;background:#bfd6ff;}
+.dot{width:8px;height:8px;border-radius:50%;background:#1f67ff;}
+
+.phone-number{
+margin-top:14px;
+font-size:28px;
+font-weight:800;
+color:#03154f;
+}
+
+.wave-bg{
+position:absolute;
+left:0;
+bottom:0;
+width:100%;
+height:260px;
+pointer-events:none;
+}
+
+.wave-line{
+position:absolute;
+width:160%;
+height:220px;
+border-radius:50%;
+border:1px solid rgba(80,140,255,.15);
+}
+
+.wave1{left:-30%;bottom:-20px;}
+.wave2{left:-25%;bottom:-10px;}
+.wave3{left:-20%;bottom:0;}
+.wave4{left:-15%;bottom:10px;}
+.wave5{left:-10%;bottom:20px;}
+
+@media(max-width:768px){
+.title{font-size:64px;}
+.title-divider span{width:80px;}
+.subtitle{font-size:18px;}
+.name-pill{width:90%;font-size:16px;}
+.atom-main{width:170px;}
+.pendulum{width:90px;}
+.prism{width:110px;}
+.formula-left,.formula-right{font-size:18px;}
+.vector{width:120px;}
+.wave{width:150px;}
+.circuit{width:120px;}
+.contact{margin-top:120px;}
+.phone-number{font-size:20px;}
+}
