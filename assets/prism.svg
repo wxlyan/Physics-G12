@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 300 180">
+
+  <!-- Incoming Light --><line x1="0"
+y1="90"
+x2="120"
+y2="90"
+stroke="#b8c0cc"
+stroke-width="3"/>
+
+  <!-- Prism --><polygon points="120,40 80,140 200,140"
+fill="none"
+stroke="#7f8aa3"
+stroke-width="3"/>
+
+  <!-- Spectrum --><line x1="120" y1="90"
+x2="300" y2="40"
+stroke="#ff5f5f"
+stroke-width="6"
+opacity=".55"/>
+
+<line x1="120" y1="90"
+x2="300" y2="55"
+stroke="#ffb85f"
+stroke-width="6"
+opacity=".55"/>
+
+<line x1="120" y1="90"
+x2="300" y2="70"
+stroke="#ffe45f"
+stroke-width="6"
+opacity=".55"/>
+
+<line x1="120" y1="90"
+x2="300" y2="85"
+stroke="#7dff7d"
+stroke-width="6"
+opacity=".55"/>
+
+<line x1="120" y1="90"
+x2="300" y2="100"
+stroke="#66d9ff"
+stroke-width="6"
+opacity=".55"/>
+
+<line x1="120" y1="90"
+x2="300" y2="115"
+stroke="#5f8cff"
+stroke-width="6"
+opacity=".55"/>
+
+<line x1="120" y1="90"
+x2="300" y2="130"
+stroke="#b066ff"
+stroke-width="6"
+opacity=".55"/>
+
+</svg>
