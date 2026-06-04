@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Momentum | Physics G12</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#050B1F;color:white;padding:20px;}
+.header{display:flex;align-items:center;margin-bottom:20px;}
+.back-btn{text-decoration:none;color:white;background:#111827;padding:12px 18px;border-radius:12px;}
+.title{text-align:center;margin-bottom:20px;}
+.title h1{font-size:2.5rem;color:#4F7DFF;}
+.title p{color:#9CA3AF;margin-top:5px;}
+.card{background:#111827;border-radius:20px;padding:20px;margin-bottom:20px;}
+.card h2{color:#4F7DFF;margin-bottom:10px;}
+.card p{color:#D1D5DB;line-height:1.6;}
+.formula{background:#0B122A;border-left:4px solid #4F7DFF;padding:15px;margin-top:10px;border-radius:10px;font-size:1.2rem;}
+.quiz{background:#0B122A;padding:15px;border-radius:12px;margin-top:10px;}
+
+/* Accordion */
+.chapter-accordion {margin-top:20px;}
+.accordion-item {margin-bottom:10px;}
+.accordion-btn{
+  width:100%;background:linear-gradient(90deg,#4f7cff,#7c5cff);
+  color:#fff;padding:15px;border:none;border-radius:10px;
+  text-align:left;font-size:18px;cursor:pointer;
+}
+.accordion-content{display:none;padding:15px;background:#111827;border-radius:10px;}
+
+/* Experiment Lab */
+.experiment-box{background:#111827;padding:15px;border-radius:12px;margin-top:10px;}
+.road{background:#0B122A;height:50px;position:relative;margin-top:15px;border-radius:10px;}
+#object{position:absolute;left:0;top:5px;font-size:30px;transition:transform 1s linear;}
+input{padding:8px;margin:5px 0;width:80px;}
+button{padding:10px 15px;border:none;border-radius:8px;background:#06b6d4;color:white;cursor:pointer;transition:.3s;}
+button:hover{background:#0ea5e9;}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <a href="chapters.html" class="back-btn">← Back</a>
+</div>
+
+<div class="title">
+    <h1>Momentum</h1>
+    <p>Linear Momentum & Impulse</p>
+</div>
+
+<div class="chapter-accordion">
+
+  <!-- Learn Section -->
+  <div class="accordion-item">
+    <button class="accordion-btn">📖 Learn</button>
+    <div class="accordion-content">
+      <div class="card">
+        <h2>What is Momentum?</h2>
+        <p>Momentum is the product of mass and velocity of an object.</p>
+      </div>
+      <div class="card">
+        <h2>Key Concepts</h2>
+        <p>• Momentum (p)</p>
+        <p>• Mass (m)</p>
+        <p>• Velocity (v)</p>
+        <p>• Impulse (J)</p>
+        <p>• Conservation of Momentum</p>
+      </div>
+      <div class="card">
+        <h2>Important Formulas</h2>
+        <div class="formula">p = mv</div>
+        <div class="formula">Impulse = FΔt</div>
+        <div class="formula">p_initial = p_final (Conservation)</div>
+      </div>
+      <div class="card">
+        <h2>Example</h2>
+        <p>A 2 kg object moves with velocity 5 m/s. Find its momentum.</p>
+        <div class="formula">
+          p = mv<br>
+          p = 2 × 5<br>
+          p = 10 kg·m/s
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Visual Summary -->
+  <div class="accordion-item">
+    <button class="accordion-btn">🖼 Visual Summary</button>
+    <div class="accordion-content">
+      <div class="card">
+        <h2>Momentum Flow</h2>
+        <div class="formula">
+          🏎 Object → m·v → Momentum → Force / Time → Impulse
+        </div>
+        <p>Momentum = Mass × Velocity<br>Impulse = Force × Time</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experiment Lab -->
+  <div class="accordion-item">
+    <button class="accordion-btn">🧪 Experiment Lab</button>
+    <div class="accordion-content">
+      <div class="experiment-box">
+        <h3>Momentum Simulator</h3>
+        <label>Mass (kg)</label>
+        <input type="number" id="mass" value="2">
+        <label>Velocity (m/s)</label>
+        <input type="number" id="velocity" value="5">
+        <button onclick="calculateMomentum()">Calculate Momentum</button>
+        <p id="momentumResult"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quiz Section -->
+  <div class="accordion-item">
+    <button class="accordion-btn">📝 Quiz</button>
+    <div class="accordion-content">
+      <div class="quiz">
+        A 3 kg object moves at 4 m/s. Find its momentum.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <script>
+// Accordion toggle
+document.querySelectorAll(".accordion-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    const content = button.nextElementSibling;
+    if(content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+});
+
+// Experiment Lab JS
+function calculateMomentum(){
+  let mass = parseFloat(document.getElementById("mass").value);
+  let velocity = parseFloat(document.getElementById("velocity").value);
+  let momentum = mass * velocity;
+  document.getElementById("momentumResult").innerHTML = "Momentum = " + momentum + " kg·m/s";
+}
+</script>
+
+</body>
+</html>
