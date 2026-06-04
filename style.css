@@ -408,6 +408,14 @@ width:100px;
     margin-top: 10px;
 }
 
+.motion-labels span{
+    background:#1b2440;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+}
+
 .motion-labels span {
     font-size: 14px;
     font-weight: 600;
