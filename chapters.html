@@ -4,115 +4,93 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Physics Chapters</title>
-
 <link rel="stylesheet" href="chapters.css">
-
 </head>
-
-  <body>
+<body>
 
 <div class="container">
+  <header>
+    <div class="menu">☰</div>
+    <h2>PHYSICS G12</h2>
+    <div class="theme">🌙</div>
+  </header>
 
-<header>
+  <div class="title">
+    <h1>Chapters</h1>
+    <p>Select a chapter to start learning</p>
+  </div>
 
-<div class="menu">☰</div>
+  <div class="chapter-list">
+    <a href="kinematics.html" class="card">
+      <div class="number blue">01</div>
+      <div class="content">
+        <h3>Kinematics</h3>
+        <p>Motion in one dimension</p>
+      </div>
+      <div class="arrow">›</div>
+    </a>
 
-<h2>PHYSICS G12</h2>
+    <div class="card">
+      <div class="number purple">02</div>
+      <div class="content">
+        <h3>Newton's Laws</h3>
+        <p>Forces and laws of motion</p>
+      </div>
+      <div class="arrow">›</div>
+    </div>
 
-<div class="theme">☾</div>
-
-</header>
-
-<div class="title">
-<h1>Chapters</h1>
-<p>Select a chapter to start learning</p>
+    <div class="card">
+      <div class="number pink">03</div>
+      <div class="content">
+        <h3>Work Energy & Power</h3>
+        <p>Energy and applications</p>
+      </div>
+      <div class="arrow">›</div>
+    </div>
+  </div>
 </div>
 
-<div class="chapter-list">
+<!-- Side Menu -->
+<div class="side-menu">
+  <a href="index.html">🏠 Home</a>
+  <a href="kinematics.html">01 Kinematics</a>
+  <a href="newton.html">02 Newton's Laws</a>
+  <a href="work.html">03 Work Energy & Power</a>
+  <a href="heat.html">04 Heat & Temperature</a>
+  <a href="waves.html">05 Waves</a>
+  <a href="electricity.html">06 Electricity</a>
+</div>
+<div class="overlay"></div>
 
-<a href="kinematics.html" class="card">
-
-<div class="number blue">01</div>
-
-<div class="content">
-<h3>Kinematics</h3>
-<p>Motion in one dimension</p>
-</div>
-
-<div class="arrow">›</div>
-
-</a>
-</a>
-
-<div class="card">
-<div class="number purple">02</div>
-<div class="content">
-<h3>Newton's Laws</h3>
-<p>Forces and laws of motion</p>
-</div>
-<div class="arrow">›</div>
-</div>
-
-<div class="card">
-<div class="number pink">03</div>
-<div class="content">
-<h3>Work Energy & Power</h3>
-<p>Energy and applications</p>
-</div>
-<div class="arrow">›</div>
-</div>
-
-<div class="card">
-<div class="number orange">04</div>
-<div class="content">
-<h3>Heat & Temperature</h3>
-<p>Thermal properties</p>
-</div>
-<div class="arrow">›</div>
-</div>
-
-<div class="card">
-<div class="number green">05</div>
-<div class="content">
-<h3>Waves</h3>
-<p>Properties and types</p>
-</div>
-<div class="arrow">›</div>
-</div>
-
-<div class="card">
-<div class="number cyan">06</div>
-<div class="content">
-<h3>Electricity</h3>
-<p>Electric charge and circuits</p>
-</div>
-<div class="arrow">›</div>
-</div>
-
-</div>
-  
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-
     const themeBtn = document.querySelector(".theme");
     const menuBtn = document.querySelector(".menu");
+    const sideMenu = document.querySelector(".side-menu");
+    const overlay = document.querySelector(".overlay");
 
+    // Dark / Light Mode
     if(themeBtn){
         themeBtn.addEventListener("click", () => {
             document.body.classList.toggle("light-mode");
         });
     }
 
-    if(menuBtn){
+    // Open Menu
+    if(menuBtn && sideMenu && overlay){
         menuBtn.addEventListener("click", () => {
-            const chapterList = document.querySelector(".chapter-list");
-
-            if(chapterList){
-                chapterList.classList.toggle("show-menu");
-            }
+            sideMenu.classList.toggle("active");
+            overlay.classList.toggle("active");
         });
     }
 
+    // Close Menu
+    if(overlay){
+        overlay.addEventListener("click", () => {
+            sideMenu.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+    }
 });
 </script>
 
